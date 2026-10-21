@@ -1,19 +1,19 @@
-# QR BD — Product Requirements Document (PRD)
+# QRBD — Product Requirements Document (PRD)
 
 ## Document Status
 - **Status:** Locked Draft for Product Owner Final Approval
 - **Version:** 1.2.0 (Phase 1 MVP — Locked Decisions Baseline)
 - **Date:** 2026-10-21
-- **Product Owner:** QR BD Leadership Team
+- **Product Owner:** QRBD Leadership Team
 - **Implementation Lead:** Antigravity AI (Pair Programming Senior Architect & Lead Engineer)
-- **Target Release:** Phase 1 Marketing Landing Page (`qr.digiseba.shop`)
+- **Target Release:** Phase 1 Marketing Landing Page (`qrbd.digiseba.shop`)
 - **Workspace File:** [`docs/PRD.md`](file:///c:/Users/livem/Downloads/Compressed/QRBD/docs/PRD.md)
 
 ---
 
 ## 1. Product Overview
 
-**QR BD** is an automated, privacy-first, cloud-to-local printing software solution designed specifically for photocopy shops, cyber cafés, stationery stores, universities, and digital service centers (ডিজিটাল সেবা কেন্দ্র / ইউনিয়ন ডিজিটাল সেন্টার) across Bangladesh.
+**QRBD** is an automated, privacy-first, cloud-to-local printing software solution designed specifically for photocopy shops, cyber cafés, stationery stores, universities, and digital service centers (ডিজিটাল সেবা কেন্দ্র / ইউনিয়ন ডিজিটাল সেন্টার) across Bangladesh.
 
 The system transforms the walk-in printing experience:
 1. Walk-in customers scan a unique shop QR code displayed at the counter using any smartphone camera or browser—**with zero mobile application installation required**.
@@ -52,8 +52,8 @@ graph TD
 - 10 inline script blocks pass `node --check` syntax validation; 6 JSON-LD schemas parse valid JSON; all local asset 404s have been resolved.
 
 ### B. Locked Product Decisions (Product Owner Approved)
-- **Public Brand Name:** `QR BD`.
-- **Target Production Domain:** `qr.digiseba.shop`.
+- **Public Brand Name:** `QRBD`.
+- **Target Production Domain:** `qrbd.digiseba.shop`.
 - **Official Support Email:** `hello@digiseba.shop`.
 - **Official Support Phone / WhatsApp:** `+8801824741444`.
 - **Pricing Currency:** Bangladeshi Taka (BDT / `৳`). Placeholder or "price to be confirmed" notices will be used until exact pricing figures are signed off. No unapproved prices will be published.
@@ -62,7 +62,7 @@ graph TD
 - **WhatsApp-to-Print Feature:** Retained in information architecture as an **"Upcoming Capability"** (secondary/future scope; not marketed as operational in Phase 1).
 - **Language Selector:** Mandatory first-class support for **English** and **Bangla**. Existing technical languages (`ta`, `te`, `kn`, `hin`) remain in underlying dictionaries without removal, but must not confuse the primary Bangladesh audience.
 - **Bangla Release Gate:** Full Bangla localization is a **strict mandatory release requirement** before Phase 1 launch.
-- **Canary Guard:** Unchanged during development; migration to `qr.digiseba.shop` scheduled for final production deployment after full QA.
+- **Canary Guard:** Unchanged during development; migration to `qrbd.digiseba.shop` scheduled for final production deployment after full QA.
 - **Visual Palette:** "Trust & Precision Blue" (`#0f4c81` Navy, `#00b4d8` Cyan, `#f59e0b` Amber, `#f8fafc` Canvas, `#ffffff` Card).
 
 ### C. Proposed Implementation Specs
@@ -76,7 +76,7 @@ graph TD
 
 ### E. Remaining Operational Items
 - Final commercial subscription plan figures from business leadership.
-- Final DNS cutover date for `qr.digiseba.shop`.
+- Final DNS cutover date for `qrbd.digiseba.shop`.
 
 ---
 
@@ -104,7 +104,7 @@ Commercial computer and photocopy shops in Bangladesh handle customer print requ
 ## 4. Product Vision
 
 > [!NOTE]
-> **Vision Clarification:** The following statement represents an aspirational, long-term business vision for the QR BD venture. **It is not a Phase 1 implementation requirement and is not a verified repository fact.**
+> **Vision Clarification:** The following statement represents an aspirational, long-term business vision for the QRBD venture. **It is not a Phase 1 implementation requirement and is not a verified repository fact.**
 
 **Long-Term Vision:** To become a trusted automated printing utility across Bangladesh, supporting digital print shops, photocopy centers, and digital service centers nationwide with instant, private, self-service mobile printing.
 
@@ -137,7 +137,7 @@ graph TD
 - **Pain Points:** Reluctance to share personal phone numbers or send private files to a stranger's WhatsApp; waiting in long queues.
 
 ### Persona 4: The Commercial Partner / Distributor (ব্যবসায়িক অংশীদার)
-- **Profile:** Hardware vendor or IT entrepreneur looking to distribute QR BD software or offer managed print services across a district.
+- **Profile:** Hardware vendor or IT entrepreneur looking to distribute QRBD software or offer managed print services across a district.
 - **Core Needs:** Clear commercial terms, white-label options, responsive partner support from `hello@digiseba.shop`.
 
 ---
@@ -150,12 +150,12 @@ graph TD
 - Shopkeepers eliminate manual WhatsApp file downloads, doubling counter capacity during rush hours.
 
 ### Business Goals
-- Establish **QR BD** as a recognized digital print utility brand in Bangladesh.
+- Establish **QRBD** as a recognized digital print utility brand in Bangladesh.
 - Acquire initial registered shop owners through free trial demo signups on the landing page.
 - Convert trial users into paying subscribers once commercial tiers are launched.
 
 ### Phase 1 Goals (Current Milestone)
-- Deliver a fast, rock-solid, production-ready marketing landing page at **`qr.digiseba.shop`**.
+- Deliver a fast, rock-solid, production-ready marketing landing page at **`qrbd.digiseba.shop`**.
 - Achieve verified bilingual support (**English** and **বাংলা**) meeting all release-gate criteria.
 - Present transparent pricing in Bangladeshi Taka (**BDT / ৳**) with appropriate placeholder notices if figures remain unfinalized.
 - Display planned payment badges (**bKash, Nagad, Rocket, Upay**) under strict truthfulness rules (clearly labeled as planned/supported options).
@@ -182,7 +182,7 @@ The Phase 1 MVP is strictly focused on the **public marketing landing page, info
 
 ```mermaid
 graph LR
-    subgraph LandingPage["Phase 1 MVP Scope (qr.digiseba.shop)"]
+    subgraph LandingPage["Phase 1 MVP Scope (qrbd.digiseba.shop)"]
         Nav["Header & Lang Switcher"]
         Hero["Hero Section & Value Prop"]
         Workflow["4-Step Visual Workflow"]
@@ -200,7 +200,7 @@ graph LR
 
 ### In-Scope Landing Page Components
 1. **Header & Navigation:**
-   - Sticky responsive header with brand mark (`QR BD`).
+   - Sticky responsive header with brand mark (`QRBD`).
    - Language selector toggle (English / বাংলা as primary options; legacy dictionaries preserved safely).
    - Smooth-scrolling navigation anchors (`#pricingSection`, `#features`).
    - Shop Owner Login link (`/admin`).
@@ -273,7 +273,7 @@ graph LR
 ## 10. User Experience Requirements
 
 1. **5-Second Value Clarity:**
-   - Any visitor landing on `qr.digiseba.shop` must immediately understand: "Customers scan a QR code at the shop, upload from their phone, and the document prints automatically."
+   - Any visitor landing on `qrbd.digiseba.shop` must immediately understand: "Customers scan a QR code at the shop, upload from their phone, and the document prints automatically."
 2. **Dual-Journey Visual Distinction:**
    - The landing page must clearly illustrate both perspectives:
      - **The Customer Experience:** Mobile browser, zero app install, upload, privacy-first temporary handling.
@@ -356,8 +356,8 @@ Bangla must cover every visible, user-facing landing-page experience:
 ## 12. Brand, Contact, and Phone Requirements
 
 ### Official Identity
-- **Public Brand Name:** `QR BD`
-- **Target Production Domain:** `qr.digiseba.shop`
+- **Public Brand Name:** `QRBD`
+- **Target Production Domain:** `qrbd.digiseba.shop`
 - **Official Support Email:** `hello@digiseba.shop`
 - **Official Support Phone / WhatsApp:** `+8801824741444`
 
@@ -426,9 +426,9 @@ The approved color palette establishes an enterprise-grade, modern, and reliable
 3. **Safe Dynamic Logo URL Validation (SEC-03):** `cfg.logoUrl` from `/api/homepage-config` must be validated via `isSafeLogo()`. Allow only relative paths, `http:`, and `https:` protocols. Explicitly reject `javascript:`, `data:`, `vbscript:`, `file:`, quotes, and whitespace. Render safely via `document.createElement('img')`.
 4. **Credential Privacy:** Zero hardcoded private keys, database credentials, or payment gateway secrets in client-side code; zero storage of shop passwords in storage; zero logging of credentials to console.
 5. **Temporary Document Deletion Communication:** The landing page communicates temporary-file deletion only to the extent supported by actual backend implementation. No numeric deletion promise (e.g. "120 seconds") should be published until verified.
-6. **Canary Guard Migration Governance:** The domain canary anti-theft check in `<head>` L4 remains unchanged during current development. Before migrating the allowlist to `qr.digiseba.shop`, the following prerequisites must be met:
+6. **Canary Guard Migration Governance:** The domain canary anti-theft check in `<head>` L4 remains unchanged during current development. Before migrating the allowlist to `qrbd.digiseba.shop`, the following prerequisites must be met:
    - Final end-to-end QA sign-off.
-   - Production hosting and HTTPS verification on `qr.digiseba.shop`.
+   - Production hosting and HTTPS verification on `qrbd.digiseba.shop`.
    - Asset path and API endpoint verification.
    - Rapid rollback capability confirmation.
    - 100% Bangla release-gate verification.
@@ -468,7 +468,7 @@ graph TD
     B4 --> B5["1B-05: SPA Router Extraction"]
     B5 --> B6["1B-06: Shared UI Components"]
     B6 --> B7["1B-07: Pricing & Reviews Extraction"]
-    B7 --> B8["1B-08: Complete QR BD Brand Migration"]
+    B7 --> B8["1B-08: Complete QRBD Brand Migration"]
     B8 --> B9["1B-09: Complete Bangla Localization & /i18n/bn.js"]
     B9 --> B10["1B-10: Bangladesh Contact & Dual Phone Validation"]
     B10 --> B11["1B-11: BDT Pricing & Planned Payment Badges"]
@@ -483,7 +483,7 @@ graph TD
 5. **1B-05:** Extract and formalize the SPA routing and overlay engine.
 6. **1B-06:** Isolate shared modal controllers (`demoModal`, `inqModal`).
 7. **1B-07:** Isolate the pricing calculator and review carousel logic.
-8. **1B-08:** Complete public brand migration from `QR Se Print` to **`QR BD`** across all titles, headings, and metadata.
+8. **1B-08:** Complete public brand migration from `QR Se Print` to **`QRBD`** across all titles, headings, and metadata.
 9. **1B-09:** Finalize 100% Bangla localization coverage and deploy static `/i18n/bn.js` meeting all release-gate criteria.
 10. **1B-10:** Migrate contact channels to **`+8801824741444`** and **`hello@digiseba.shop`**, and implement dual Bangladesh phone validation (`01...` and `+8801...`).
 11. **1B-11:** Apply BDT (`৳`) pricing labels and render planned payment badges (bKash, Nagad, Rocket, Upay) with truthfulness captions; update WhatsApp teaser as upcoming capability.
@@ -496,7 +496,7 @@ graph TD
 
 | Evaluation Area | Success Standard & Release Gate Benchmark |
 |---|---|
-| **Product & Brand** | All visible branding displays `QR BD`. Official domain `qr.digiseba.shop`, email `hello@digiseba.shop`, and phone `+8801824741444` render cleanly. |
+| **Product & Brand** | All visible branding displays `QRBD`. Official domain `qrbd.digiseba.shop`, email `hello@digiseba.shop`, and phone `+8801824741444` render cleanly. |
 | **Pricing & Badges** | Currency presented in BDT (`৳`). Planned payment badges (bKash, Nagad, Rocket, Upay) clearly captioned without false live-checkout claims. |
 | **Phone Validation** | Both `01XXXXXXXXX` and `+8801XXXXXXXXX` validated cleanly with bilingual error hints. |
 | **Bangla Release Gate** | **MANDATORY GATE:** Selecting `বাংলা` renders 100% of landing page nodes in grammatically accurate Bengali with zero 404s, zero fallbacks to English, and clean complex glyphs across all 4 viewports. |
@@ -530,8 +530,8 @@ The following systems are explicitly **OUT OF SCOPE** for Phase 1:
 
 | Decision Dimension | Approved Specification |
 |---|---|
-| **Public Brand Name** | `QR BD` |
-| **Production Domain** | `qr.digiseba.shop` |
+| **Public Brand Name** | `QRBD` |
+| **Production Domain** | `qrbd.digiseba.shop` |
 | **Official Support Email** | `hello@digiseba.shop` |
 | **Official Phone / WhatsApp** | `+8801824741444` |
 | **Pricing Currency** | Bangladeshi Taka (BDT / `৳`) with placeholder pricing if unfinalized |
@@ -540,7 +540,7 @@ The following systems are explicitly **OUT OF SCOPE** for Phase 1:
 | **WhatsApp Feature** | Displayed in information architecture as an "Upcoming Capability" |
 | **Language Support** | English and Bangla mandatory first-class; legacy dictionaries preserved safely |
 | **Bangla Release Gate** | Mandatory release requirement: 100% coverage before launch |
-| **Canary Migration** | Guard unchanged now; migration to `qr.digiseba.shop` following full QA |
+| **Canary Migration** | Guard unchanged now; migration to `qrbd.digiseba.shop` following full QA |
 | **Architecture** | Vanilla JavaScript / Zero-Build / Pure Web Standards |
 | **Development Approach** | Controlled refactoring of existing codebase (No greenfield rewrite) |
 | **Phase 1 Boundary** | Marketing Landing Page, Overlays, i18n, Styles, Assets only |
@@ -553,7 +553,7 @@ The following systems are explicitly **OUT OF SCOPE** for Phase 1:
 
 The following items are purely operational and commercial scheduling points:
 1. **Final Commercial Plan Figures:** Receipt of final numerical subscription fee figures in BDT from commercial leadership.
-2. **DNS & Production Hosting Cutover Schedule:** Coordinating the live deployment date for `qr.digiseba.shop` and canary allowlist migration.
+2. **DNS & Production Hosting Cutover Schedule:** Coordinating the live deployment date for `qrbd.digiseba.shop` and canary allowlist migration.
 
 ---
 
@@ -565,7 +565,7 @@ The following items are purely operational and commercial scheduling points:
 - [x] **Section 8:** Phase 1 MVP scope is strictly bounded to the marketing landing page and existing overlays.
 - [x] **Section 9:** Feature classifications (KEEP, PRESERVE, DEFER, REMOVE-LATER) align with business priorities.
 - [x] **Section 11:** Full Bangla support is locked as a mandatory release gate with all 13 acceptance criteria.
-- [x] **Section 12:** Brand name (`QR BD`), contact channels (`+8801824741444`, `hello@digiseba.shop`), and dual phone formats (`01...` & `+8801...`) confirmed.
+- [x] **Section 12:** Brand name (`QRBD`), contact channels (`+8801824741444`, `hello@digiseba.shop`), and dual phone formats (`01...` & `+8801...`) confirmed.
 - [x] **Section 13:** Trust & Precision Blue color palette locked for Phase 1B.
 - [x] **Section 14:** BDT currency (`৳`), planned payment badges (bKash/Nagad/Rocket/Upay), and WhatsApp upcoming capability locked.
 - [x] **Section 15:** Security patch plan (SEC-01, SEC-02, SEC-03) verified compliant; canary prerequisites documented.
