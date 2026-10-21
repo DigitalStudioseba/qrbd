@@ -806,6 +806,58 @@
   };
   for (var kEXTRA27 in EXTRA27) if (Object.prototype.hasOwnProperty.call(EXTRA27, kEXTRA27)) EXTRA[kEXTRA27] = EXTRA27[kEXTRA27];
 
+  /* EXTRA28 — work-66 (21 Oct 2026): homepage English saaf. Hinglish key jyon ki tyon (baaki bhasha ki key match karti rahe);
+     sirf English value theek ki / jodi. Ek sentence kai text-node me bata ho to har node ka English aise likha hai ki jodne par poora vaakya bane. */
+  var EXTRA28 = {
+    "Customer ke phone se": "From the customer's phone",
+    "Print seedha aapke printer par": "Print straight to your printer",
+    "Main": "I'm",
+    "Ye guide aapko": "This guide walks you",
+    "dikhayega ki payment complete karne ke baad Shop ID milne se lekar pehla test print nikalne tak kya-kya karna hai. Har step ko order me follow karo — kahin atko to sabse neeche Support section me contact ka tarika bhi diya hai.": "through everything you need to do, from getting your Shop ID after payment to taking your first test print. Follow the steps in order — and if you get stuck, the Support section at the bottom has the contact details.",
+    "Apni Shop ID aur password se": "With your Shop ID and password, use",
+    "karo. Login hote hi aap seedha apne Shop Dashboard me pahunch jaoge.": "to continue. As soon as you log in, you land right on your Shop Dashboard.",
+    "Browser me apne Shop Dashboard se ek baar": "In the browser, from your Shop Dashboard, just",
+    "Settings me jaao —": "Go to Settings — under",
+    "ke liye ek printer aur": "choose one printer, and under",
+    "ke liye ek printer select karo. Agar dukaan me sirf ek hi printer hai, to dono jagah wahi printer select kar do. Phir": "choose another. If the shop has only one printer, select that same printer in both places. Then press the",
+    "dabao.": "button.",
+    "par jaakar apna account banao.": "— create your account there.",
+    "GST ya current account nahi hai? Koi baat nahi —": "No GST or current account? No problem — choose the",
+    "category chuno. Savings account aur PAN card se hi ho jaata hai.": "category. A savings account and PAN card are enough.",
+    "Account active hone ke baad:": "Once the account is active, go to",
+    "me jaakar apni": "and generate your",
+    "generate karo.": "now.",
+    "me jaao, aur wahan": "and then select",
+    "select karo.": "option.",
+    "Razorpay se generate ki hui": "Copy the",
+    "copy karke yahan paste karo, phir": "you generated in Razorpay, paste them here, then press the",
+    "karo.": "button.",
+    "Kahin nahi. File server par sirf print hone tak rehti hai — print command chalte hi turant delete command chal jaata hai, aur file": "Nowhere. The file stays on the server only until it's printed — the moment the print command runs, a delete command runs and the file is",
+    "mit jaati hai.": "erased.",
+    "Do tarike hain — (1) apne Shop Dashboard ke Support tab me": "Two ways — (1) in the Support tab of your Shop Dashboard, use the",
+    "button se seedha message karo, ya (2) System Tray me icon par right-click karke": "button to message us directly, or (2) right-click the icon in the System Tray and press",
+    "dabao. Dono se seedha admin tak baat pahunchti hai.": "button. Both reach the admin directly.",
+    "✅ Aane wale SAARE naye feature — FREE": "✅ ALL upcoming new features — FREE",
+    "Card, UPI aur net-banking ki detail seedha payment company ke apne secure page par jaati hai — QR Se Print use kabhi dekhta ya store nahi karta.": "Your card, UPI and net-banking details go straight to the payment company's own secure page — QR Se Print never sees or stores them.",
+    "15 × ₹5 = ₹75/din": "15 × ₹5 = ₹75/day",
+    "Call: 9am – 9pm · Message: 24 ghante": "Call: 9am – 9pm · Message: 24 hours",
+    "Apna personal number har customer ko dena padta hai. Chat me files kho jaati hain, \"bhaiya wo wali file\" dhundhte raho.": "You have to give your personal number to every customer. Files get lost in chat, and you keep searching for \"that file, bro\".",
+    "%s Ghanta FREE Demo": "%s-Hour FREE Demo",
+    "%s Min FREE Demo": "%s-Minute FREE Demo",
+    "Working hours me kuch hi minute lagte hain. Shop ID aur password": "It takes only a few minutes during working hours. Your Shop ID and password will be sent",
+    "WhatsApp par": "on WhatsApp",
+    "%d par aa jayenge.": "to %d.",
+    "🤝 ke through aaye ho — aapke liye special price": "🤝 You came through a referral — special price for you",
+    "🤝 %ske through aaye ho — aapke liye special price": "🤝 %sreferred you — special price for you"
+  };
+  for (var kEXTRA28 in EXTRA28) if (Object.prototype.hasOwnProperty.call(EXTRA28, kEXTRA28)) EXTRA[kEXTRA28] = EXTRA28[kEXTRA28];
+
+  /* EXTRA29 — work-69: Monthly plan ab 'sab kuch' */
+  var EXTRA29 = {
+    "Saare Advance Feature + Smart Scanner + aane wale naye feature — sab FREE, mahine ke hisaab se": "All Advance features + Smart Scanner + all upcoming new features — all FREE, billed monthly"
+  };
+  for (var kEXTRA29 in EXTRA29) if (Object.prototype.hasOwnProperty.call(EXTRA29, kEXTRA29)) EXTRA[kEXTRA29] = EXTRA29[kEXTRA29];
+
   function install() {
     if (window.QSPi18n && typeof window.QSPi18n.addDict === 'function') {
       window.QSPi18n.addDict(EXTRA);
