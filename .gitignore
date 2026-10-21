@@ -1,0 +1,33 @@
+# Operating System Artifacts
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Temporary & Log Files
+*.log
+*.tmp
+.temp/
+
+# Environment & Secret Files
+.env
+.env.*
+!.env.example
+
+# Linux Container Setup Markers
+.sudo_as_admin_successful
+
+# Archive Packages
+*.zip
+
+# Python Bytecode & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test Harness, Dependencies & Generated Test Artifacts
+verification/node_modules/
+verification/test-results/
+verification/playwright-report/
+verification/shots/
+verification/results.json
+verification/results-staging.txt

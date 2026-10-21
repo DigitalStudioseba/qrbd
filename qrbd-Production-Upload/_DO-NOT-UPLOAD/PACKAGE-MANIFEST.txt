@@ -1,0 +1,39 @@
+QRSe Print — qrbd-Production-Upload.zip · PACKAGE MANIFEST
+Prepared: 21 October 2026 · Verified against live https://qrseprint.in (no drift at packaging time)
+
+=== UPLOAD THESE 3 FILES (document root) ===
+
+file   : index.html
+size   : 414709 bytes
+sha256 : bed392e6ce9ca79bd471bff075c5509b3426d5a36b9ffc510920d8e1ad2d6119
+
+file   : icon-512.png
+size   : 2064 bytes
+sha256 : 7871ed994d0c049f0e70744554dad0b852807c0e4ef08d65f8e62edac13dcf4b
+
+file   : og-image.png
+size   : 97201 bytes
+sha256 : 7ae067f7001784760cb9a9b5074f19245f727e819b6b8b5f49c59797fd99f49e
+
+
+=== KEEP LOCALLY — DO NOT UPLOAD ===
+
+file   : _DO-NOT-UPLOAD/UPLOAD-INSTRUCTIONS.md
+size   : 4902 bytes
+sha256 : c3f69f981f91e0730bb0495de8c821378bdbdd02e3366ecb2bb3da1a34ce8b1c
+
+file   : _DO-NOT-UPLOAD/DEPLOY.md
+size   : 4533 bytes
+sha256 : 662ec1210084fe8604950cb21f6150938cabd8474b5ac5f3a5994a2d74021433
+
+file   : _DO-NOT-UPLOAD/rollback-index-T0.html
+size   : 412324 bytes
+sha256 : 34f9001e037e35756776930791f7b00738713f32e7b15400fbd6edc30658f7c2
+
+Verification:
+  Windows PowerShell : Get-FileHash .\index.html -Algorithm SHA256
+  macOS / Linux      : sha256sum index.html icon-512.png og-image.png
+
+Rollback reference: _DO-NOT-UPLOAD/rollback-index-T0.html = byte-exact production homepage captured
+21-Oct-2026 08:19:13 UTC (sha256 34f9001e037e35756776930791f7b00738713f32e7b15400fbd6edc30658f7c2).
+Rename it to index.html on the server (and purge Cloudflare) to restore the pre-redesign homepage.
