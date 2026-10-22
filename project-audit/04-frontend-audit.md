@@ -1,6 +1,6 @@
 # Project Audit: Frontend Architecture & Component Audit
 
-This report provides a granular audit of the frontend presentation layer, user interfaces, DOM layout, design system adherence, component hierarchies, form validation routines, and responsive behaviors within the QR Se Print application.
+This report provides a granular audit of the frontend presentation layer, user interfaces, DOM layout, design system adherence, component hierarchies, form validation routines, and responsive behaviors within the legacy brand application.
 
 ---
 
@@ -94,7 +94,7 @@ The application implements a hybrid Single-Page Application (SPA) architecture w
   - Message: Minimum 5 characters length.
 - **Action Dispatch:**
   - WhatsApp: Formats URI and redirects to `https://wa.me/918404832414?text={encodedBody}`.
-  - Email: Formats URI and launches native mail client via `mailto:qrseprint@gmail.com?subject={subject}&body={body}`.
+  - Email: Formats URI and launches native mail client via `mailto:legacy-support@gmail.com?subject={subject}&body={body}`.
 
 ---
 

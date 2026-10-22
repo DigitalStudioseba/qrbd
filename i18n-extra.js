@@ -349,8 +349,8 @@
      translate hoti hai — poora block dictionary me na ho tab bhi jitna
      mil jaye utna English ho jaata hai. */
   function wrapDialogs() {
-    if (window.__qspDialogsWrapped) return;
-    var T = (window.QSPi18n && window.QSPi18n.t) || function (s) { return s; };
+    if (window.__qrbdDialogsWrapped) return;
+    var T = (window.QRBDi18n && window.QRBDi18n.t) || function (s) { return s; };
     function tr(msg) {
       if (msg == null) return msg;
       return String(msg).split('\n').map(function (line) {
@@ -367,7 +367,7 @@
         return orig.apply(window, args);
       };
     });
-    window.__qspDialogsWrapped = true;
+    window.__qrbdDialogsWrapped = true;
   }
   /* ── AB KI BAAR JODA GAYA ── website audit me jo English me
      chhoot gaya tha (pricing plans, demo form, white-label,
@@ -859,14 +859,14 @@
   for (var kEXTRA29 in EXTRA29) if (Object.prototype.hasOwnProperty.call(EXTRA29, kEXTRA29)) EXTRA[kEXTRA29] = EXTRA29[kEXTRA29];
 
   function install() {
-    if (window.QSPi18n && typeof window.QSPi18n.addDict === 'function') {
-      window.QSPi18n.addDict(EXTRA);
+    if (window.QRBDi18n && typeof window.QRBDi18n.addDict === 'function') {
+      window.QRBDi18n.addDict(EXTRA);
       wrapDialogs();
     } else {
       // i18n.js abhi load nahi hua — dict me pehle se daal do,
       // wo start hote hi ise utha lega.
-      window.QSP_EN_DICT = window.QSP_EN_DICT || {};
-      for (var k in EXTRA) if (EXTRA.hasOwnProperty(k)) window.QSP_EN_DICT[k] = EXTRA[k];
+      window.QRBD_EN_DICT = window.QRBD_EN_DICT || {};
+      for (var k in EXTRA) if (EXTRA.hasOwnProperty(k)) window.QRBD_EN_DICT[k] = EXTRA[k];
     }
   }
   install();

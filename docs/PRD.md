@@ -47,7 +47,7 @@ graph TD
 - The codebase is a zero-build Vanilla JavaScript application ([`index.html`](file:///c:/Users/livem/Downloads/Compressed/QRBD/index.html), [`i18n.js`](file:///c:/Users/livem/Downloads/Compressed/QRBD/i18n.js), [`i18n-extra.js`](file:///c:/Users/livem/Downloads/Compressed/QRBD/i18n-extra.js)).
 - The repository was initialized at Git baseline commit [`4535a13`](file:///c:/Users/livem/Downloads/Compressed/QRBD) and synchronized to production baseline [`4803726`](file:///c:/Users/livem/Downloads/Compressed/QRBD).
 - The working tree currently holds an uncommitted Phase 1A-05 security patch on `index.html` (SEC-01 review escaping, SEC-02 safe credential copying via `data-copy`, SEC-03 safe logo URL protocol validation).
-- Root `index.html` contains 289 legacy references to `QR Se Print`, 81 references to `qrseprint.in`, 7 references to Indian WhatsApp numbers (`8404832414`), and 3 references to `qrseprint@gmail.com`.
+- Root `index.html` contains 289 legacy references to `legacy brand`, 81 references to `legacy-domain`, 7 references to Indian WhatsApp numbers (`8404832414`), and 3 references to `legacy-support@gmail.com`.
 - Root does not currently host `/i18n/bn.js` statically, causing the language switcher in the current draft to fall back silently to English upon selecting `বাংলা`.
 - 10 inline script blocks pass `node --check` syntax validation; 6 JSON-LD schemas parse valid JSON; all local asset 404s have been resolved.
 
@@ -483,7 +483,7 @@ graph TD
 5. **1B-05:** Extract and formalize the SPA routing and overlay engine.
 6. **1B-06:** Isolate shared modal controllers (`demoModal`, `inqModal`).
 7. **1B-07:** Isolate the pricing calculator and review carousel logic.
-8. **1B-08:** Complete public brand migration from `QR Se Print` to **`QRBD`** across all titles, headings, and metadata.
+8. **1B-08:** Complete public brand migration from `legacy brand` to **`QRBD`** across all titles, headings, and metadata.
 9. **1B-09:** Finalize 100% Bangla localization coverage and deploy static `/i18n/bn.js` meeting all release-gate criteria.
 10. **1B-10:** Migrate contact channels to **`+8801824741444`** and **`hello@digiseba.shop`**, and implement dual Bangladesh phone validation (`01...` and `+8801...`).
 11. **1B-11:** Apply BDT (`৳`) pricing labels and render planned payment badges (bKash, Nagad, Rocket, Upay) with truthfulness captions; update WhatsApp teaser as upcoming capability.

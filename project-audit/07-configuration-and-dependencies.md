@@ -1,6 +1,6 @@
 # Project Audit: Configuration & Dependency Management
 
-This document details all configuration files, package manifests, environment variable references, Content Security Policy directives, and deployment package manifests discovered across the QR Se Print repository.
+This document details all configuration files, package manifests, environment variable references, Content Security Policy directives, and deployment package manifests discovered across the legacy brand repository.
 
 ---
 
@@ -24,8 +24,8 @@ The application follows a zero-build, zero-runtime-dependency design for the pro
 - **Attributes:**
 ```json
 {
-  "name": "QR Se Print — Cyber Cafe & Print Shop Software",
-  "short_name": "QR Se Print",
+  "name": "legacy brand — Cyber Cafe & Print Shop Software",
+  "short_name": "legacy brand",
   "description": "Customer QR scan karke file bheje, print automatic nikle. Cyber cafe aur print shop ke liye QR auto-print software.",
   "lang": "hi-IN",
   "start_url": "/",
@@ -70,7 +70,7 @@ In accordance with security rules, no secrets or API keys are stored in the clie
 |---|---|---|
 | `PORT` | Safe Inferred | Server port binding (defaults to 8080/8082 in staging) |
 | `SHOW_STATS` | Safe Inferred | Controls visibility of `#statsStrip` via `/api/homepage-config` |
-| `SUPPORT_EMAIL` | Safe Inferred | Customer support email (default: `qrseprint@gmail.com`) |
+| `SUPPORT_EMAIL` | Safe Inferred | Customer support email (default: `legacy-support@gmail.com`) |
 | `SUPPORT_PHONE` | Safe Inferred | Customer support phone (default: `84048 32414`) |
 | `CLOUDFLARE_TURNSTILE_SITE_KEY` | Safe Inferred | Public Turnstile challenge key delivered via `/api/security/challenge` |
 | `CLOUDFLARE_TURNSTILE_SECRET_KEY` | Server-Side Only | Secret key used server-side to validate Turnstile tokens |

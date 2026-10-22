@@ -1,4 +1,4 @@
-// QRSe Print — Phase-6 verification suite (playwright)
+// legacy brand — Phase-6 verification suite (playwright)
 // Run: node verification/run.mjs
 // Compares the redesigned site (localhost:8080) with the original baseline
 // (localhost:8081). All checks are real browser runs; results printed as
@@ -228,7 +228,7 @@ await interactionSuite(REDESIGN, 'mobile', 390, true);
 // ── Report ─────────────────────────────────────────────────────────
 const counts = { PASS:0, WARNING:0, FAIL:0 };
 for (const r of results) counts[r.status]++;
-console.log('\n════════ QRSe Print — Phase 6 verification results ════════');
+console.log('\n════════ legacy brand — Phase 6 verification results ════════');
 for (const r of results) console.log(`${r.status.padEnd(8)} ${r.name}${r.detail ? '  →  ' + r.detail : ''}`);
 console.log(`\nTOTAL: ${counts.PASS} PASS · ${counts.WARNING} WARNING · ${counts.FAIL} FAIL`);
 fs.writeFileSync(new URL('./results.json', import.meta.url), JSON.stringify({counts, results}, null, 2));

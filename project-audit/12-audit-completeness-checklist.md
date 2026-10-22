@@ -1,6 +1,6 @@
 # Project Audit: Completeness Checklist & Technical Glossary
 
-This document reconciles all audit requirements, cataloged artifacts, verified constraints, operational boundaries, and domain terminology for the QR Se Print audit completed on October 21, 2026.
+This document reconciles all audit requirements, cataloged artifacts, verified constraints, operational boundaries, and domain terminology for the legacy brand audit completed on October 21, 2026.
 
 ---
 
@@ -49,7 +49,7 @@ This document reconciles all audit requirements, cataloged artifacts, verified c
   - `work-65`: International user registration banner and multi-gateway payment instructions.
   - `work-66`: Refined English translation dictionary additions (`EXTRA28`).
   - `work-67`: "Setup Festival" dynamic discount system with server-driven CSS gradients (`--fc1`/`--fc2`).
-- **Canary Guard (Script 0):** Anti-theft script executing synchronously in `<head>`, verifying `location.hostname` against an approved domain list (`localhost`, `127.0.0.1`, `qrseprint.in`) and redirecting unauthorized clones.
+- **Canary Guard (Script 0):** Anti-theft script executing synchronously in `<head>`, verifying `location.hostname` against an approved domain list (`localhost`, `127.0.0.1`, `legacy-domain`) and redirecting unauthorized clones.
 - **Cloudflare Turnstile:** Privacy-preserving alternative to reCAPTCHA deployed at `/api/security/challenge` to protect demo account generation against bot automation.
 - **Ephemeral Storage Buffer:** Architecture where customer print jobs exist in temporary cloud memory or cache for a maximum of 120 seconds before permanent deletion.
 - **Cyber Café / Xerox Shop:** Small retail storefronts ubiquitous across India offering photocopying, document printing, internet browsing, and administrative document submission services.

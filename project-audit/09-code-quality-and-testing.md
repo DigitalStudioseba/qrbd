@@ -1,6 +1,6 @@
 # Project Audit: Code Quality, Maintainability & Test Coverage
 
-This report audits the testing infrastructure, automated verification runs, code maintainability, architectural complexity, accessibility adherence, and performance characteristics across the QR Se Print project.
+This report audits the testing infrastructure, automated verification runs, code maintainability, architectural complexity, accessibility adherence, and performance characteristics across the legacy brand project.
 
 ---
 

@@ -1,6 +1,6 @@
 # Project Audit: Complete Feature Audit & Workflows
 
-This document details every feature discovered within the QR Se Print codebase. Each feature is audited against its source code implementation, user-facing behavior, validation rules, backend dependencies, and verified operating status.
+This document details every feature discovered within the legacy brand codebase. Each feature is audited against its source code implementation, user-facing behavior, validation rules, backend dependencies, and verified operating status.
 
 ---
 
@@ -143,7 +143,7 @@ This document details every feature discovered within the QR Se Print codebase. 
 - **Logic (`sendInq(via)` and `sendContact(via)`):**
   - Validates name, 10-digit phone, optional email, and message body (min 5 characters).
   - If user selects WhatsApp (`via === 'whatsapp'`), opens a formatted message in WhatsApp Web/App (`wa.me`).
-  - If user selects Email (`via === 'email'`), opens default email client (`mailto:qrseprint@gmail.com`).
+  - If user selects Email (`via === 'email'`), opens default email client (`mailto:legacy-support@gmail.com`).
 
 ---
 
@@ -179,6 +179,6 @@ This document details every feature discovered within the QR Se Print codebase. 
 - **Location:** [index.html#L1-L15](file:///c:/Users/livem/Downloads/Compressed/QRBD/index.html#L1) (Script 0)
 - **Status:** **Fully Implemented**
 - **Technical Operation:** Executes synchronously as the first script in `<head>`.
-- **Allowed Hosts:** `localhost`, `127.0.0.1`, `[::1]`, `*.localhost`, `*.qrseprint.in`, and `file://`.
-- **Violation Action:** If hosted on an unauthorized external domain, it completely purges the DOM using `document.open()`, displays an "Unofficial Copy" warning notice, and redirects the browser to `https://qrseprint.in` after 2,500 milliseconds.
+- **Allowed Hosts:** `localhost`, `127.0.0.1`, `[::1]`, `*.localhost`, `*.legacy-domain`, and `file://`.
+- **Violation Action:** If hosted on an unauthorized external domain, it completely purges the DOM using `document.open()`, displays an "Unofficial Copy" warning notice, and redirects the browser to `https://[legacy-domain]/` after 2,500 milliseconds.
 

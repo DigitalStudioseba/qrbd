@@ -1,6 +1,6 @@
 # Project Audit: Defensive Security Assessment
 
-This document provides a defensive security code review of the QR Se Print application, detailing threat vectors, credential leakage scans, input handling, injection vulnerabilities, and defensive recommendations.
+This document provides a defensive security code review of the legacy brand application, detailing threat vectors, credential leakage scans, input handling, injection vulnerabilities, and defensive recommendations.
 
 ---
 
@@ -68,7 +68,7 @@ CSP = ("default-src 'self'; script-src 'self' 'unsafe-inline' https://checkout.r
 - **Location:** [index.html#L5404](file:///c:/Users/livem/Downloads/Compressed/QRBD/index.html#L5404)
 - **Code Snippet:**
 ```javascript
-if (bw) bw.innerHTML = '<img src="' + cfg.logoUrl + '" alt="QR Se Print" style="height:38px;max-width:180px;object-fit:contain;">';
+if (bw) bw.innerHTML = '<img src="' + cfg.logoUrl + '" alt="legacy brand" style="height:38px;max-width:180px;object-fit:contain;">';
 ```
 - **Vulnerability Analysis:**
   If the superadmin settings stored in `/api/homepage-config` are tampered with or contain double-quotes, an attacker could break out of the `src` attribute (e.g. `logoUrl = '" onerror="alert(1)'`).
@@ -78,7 +78,7 @@ if (bw) bw.innerHTML = '<img src="' + cfg.logoUrl + '" alt="QR Se Print" style="
 if (bw && cfg.logoUrl) {
   var img = document.createElement('img');
   img.src = encodeURI(cfg.logoUrl);
-  img.alt = 'QR Se Print';
+  img.alt = 'legacy brand';
   img.style.cssText = 'height:38px;max-width:180px;object-fit:contain;';
   bw.replaceChildren(img);
 }
@@ -101,10 +101,10 @@ An automated regex scan was executed across all 115 files searching for common c
 - **Allowlist Implemented:**
 ```javascript
 var h = location.hostname;
-if (h === "localhost" || h === "127.0.0.1" || h === "[::1]" || 
-    /(^|\.)localhost$/.test(h) || /(^|\.)qrseprint\.in$/.test(h) || 
+if (h === "localhost" || h === "127.0.0.1" || h === "[::1]" ||
+    /(^|\.)localhost$/.test(h) || /(^|\.)legacy-domain$/.test(h) ||
     location.protocol === "file:") return;
 ```
 - **Security Assessment:**
-  Provides reliable client-side detection against unauthorized content scrapers and cloned phishing sites. Unauthorized mirrors are redirected to `https://qrseprint.in` after 2.5 seconds.
+  Provides reliable client-side detection against unauthorized content scrapers and cloned phishing sites. Unauthorized mirrors are redirected to `https://[legacy-domain]/` after 2.5 seconds.
 

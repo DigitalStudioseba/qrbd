@@ -1,6 +1,6 @@
 # Project Audit: Architecture Diagrams & Execution Workflows
 
-This document visualizes the complete architectural landscape, startup execution flows, customer journey sequences, translation lifecycles, and verification pipelines across the QR Se Print platform.
+This document visualizes the complete architectural landscape, startup execution flows, customer journey sequences, translation lifecycles, and verification pipelines across the legacy brand platform.
 
 ---
 
@@ -10,7 +10,7 @@ This document visualizes the complete architectural landscape, startup execution
 flowchart TD
     subgraph ClientLayer["Client Layer (Browser & Walk-In Customers)"]
         CustomerPhone["Walk-in Customer Smartphone<br/>(Scans Shop QR Code)"]
-        VisitorBrowser["Prospective Shop Owner Browser<br/>(Visits qrseprint.in)"]
+        VisitorBrowser["Prospective Shop Owner Browser<br/>(Visits legacy-domain)"]
     end
 
     subgraph CDNLayer["Edge & Security Layer (Cloudflare)"]
@@ -26,7 +26,7 @@ flowchart TD
         DemoModal["Demo Generation Modal (#demoModal)"]
     end
 
-    subgraph BackendAPI["Backend Cloud SaaS (qrseprint.in/api)"]
+    subgraph BackendAPI["Backend Cloud SaaS (legacy-domain/api)"]
         APIServer["REST API Controller"]
         QueueManager["Ephemeral Print Queue (120s TTL)"]
         PaymentCoord["Payment Gateway Coordinator"]
@@ -41,7 +41,7 @@ flowchart TD
     end
 
     subgraph ShopPremises["Cyber Café / Retail Print Shop"]
-        ShopPC["Windows Desktop Machine<br/>(QR Se Print Agent)"]
+        ShopPC["Windows Desktop Machine<br/>(legacy brand Agent)"]
         Printer["Local Shop Printer<br/>(Epson, HP, Canon, Brother)"]
     end
 
@@ -77,7 +77,7 @@ sequenceDiagram
     User->>Canary: Loads initial HTML head
     Note over Canary: Check location.hostname against allowlist
     alt Hostname Unauthorized
-        Canary-->>User: document.open() -> Render warning -> Redirect to qrseprint.in
+        Canary-->>User: document.open() -> Render warning -> Redirect to legacy-domain
     else Hostname Authorized
         Canary->>DOM: Allow HTML parser to continue
     end
@@ -142,7 +142,7 @@ sequenceDiagram
     autonumber
     actor Customer as Walk-in Customer
     participant MobileWeb as Customer Mobile Browser
-    participant Cloud as QR Se Print Cloud API
+    participant Cloud as legacy brand Cloud API
     participant Desktop as Shop Desktop Agent
     participant Printer as Physical Printer
 

@@ -1,4 +1,4 @@
-# QRSe Print — Redesign Final Report
+# legacy brand — Redesign Final Report
 
 **Date:** 2026-10-21 · **Authority:** `design.md` · **Approach:** token-first, CSS-only · **Net change:** **1 file modified** (`index.html`), 0 files added to the product, 0 deleted.
 

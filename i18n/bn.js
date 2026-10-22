@@ -3933,8 +3933,15 @@
   for (var kD35 in D35) if (Object.prototype.hasOwnProperty.call(D35, kD35)) D[kD35] = D35[kD35];
 
   function install() {
-    if (window.QSPi18n && window.QSPi18n.addDict) window.QSPi18n.addDict(D, "bn");
-    else { window.QSP_DICTS = window.QSP_DICTS || {}; window.QSP_DICTS["bn"] = D; }
+    if (window.QRBDi18n && typeof window.QRBDi18n.addDict === 'function') {
+      window.QRBDi18n.addDict(D, "bn");
+    } else {
+      window.QRBD_DICTS = window.QRBD_DICTS || {};
+      window.QRBD_DICTS["bn"] = D;
+    }
   }
   install();
+  if (typeof document !== 'undefined' && document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', install);
+  }
 })();

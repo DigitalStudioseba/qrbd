@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-<script>/* qsp-canary:QSP-7f3a9c1e-b2d4-4e68-a1f0-5c8e9d27b6a3 — QRBD original site; copy verification */(function(){try{var h=location.hostname;if(h==="localhost"||h==="127.0.0.1"||h==="[::1]"||/(^|.)localhost$/.test(h)||/(^|\.)qrbd\.digiseba\.shop$/.test(h)||location.protocol==="file:")return;document.open();document.write("<!doctype html><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><body style=\"font-family:system-ui,sans-serif;text-align:center;padding:60px 20px;background:#fff7f7;color:#7f1d1d\"><h2>This is an unofficial copy</h2><p>Original QRBD: <a href=\"https://qrbd.digiseba.shop\">qrbd.digiseba.shop</a></p><\/body>");document.close();setTimeout(function(){location.replace("https://qrbd.digiseba.shop")},2500);}catch(e){}})();</script>
+<script>/* qrbd-canary:QRBD-7f3a9c1e-b2d4-4e68-a1f0-5c8e9d27b6a3 — QRBD original site; copy verification */(function(){try{var h=location.hostname;if(h==="localhost"||h==="127.0.0.1"||h==="[::1]"||/(^|.)localhost$/.test(h)||/(^|\.)qrbd\.digiseba\.shop$/.test(h)||location.protocol==="file:")return;document.open();document.write("<!doctype html><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><body style=\"font-family:system-ui,sans-serif;text-align:center;padding:60px 20px;background:#fff7f7;color:#7f1d1d\"><h2>This is an unofficial copy</h2><p>Original QRBD: <a href=\"https://qrbd.digiseba.shop\">qrbd.digiseba.shop</a></p><\/body>");document.close();setTimeout(function(){location.replace("https://qrbd.digiseba.shop")},2500);}catch(e){}})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>QRBD – Cyber Cafe & Print Shop Auto Print Software</title>
@@ -2630,7 +2630,7 @@ html.legal-open,body.legal-open{overflow:hidden}
 /* Headline tracking per design.md (tight, poster-like) */
 .sec-title,.plans-title,.pt-title,.nsf-title{letter-spacing:-1.5px}
 </style>
-<style id="qsp-info-design">
+<style id="qrbd-info-design">
 /* ═══════════ INFO PAGES (Setup Guide / Terms / Privacy / …) — naya design (work-29)
    Ye saare index.html ke andar .legal-page overlay hain. Neeche ka skin sab par
    ek saath lagta hai, isliye har page ek jaisa dikhta hai. Koi naya text nahi —
@@ -2741,7 +2741,7 @@ html.legal-open,body.legal-open{overflow:hidden}
   .lg-wrap{padding:24px 14px 60px !important}
 }
 </style>
-<style id="qsp-demo-success">
+<style id="qrbd-demo-success">
   /* ══════════════════════════════════════════════════════════════
      DEMO SUCCESS + PAYMENT SUCCESS — 2026 design
 
@@ -3049,7 +3049,7 @@ html.legal-open,body.legal-open{overflow:hidden}
     .dsx-row .v{ font-size:16px; }
   }
 </style>
-<style id="qsp-privacy52">
+<style id="qrbd-privacy52">
 /* work-52 — Privacy Policy: "kya, kitne din" table + Grievance Officer box.
    Table ka wrapper khud scroll hota hai, page nahi (phone par 560px se chhota). */
 .lg-tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:12px 0 4px;border:1.5px solid #ece7f5;border-radius:14px;background:#fff}
@@ -3067,7 +3067,7 @@ html.legal-open,body.legal-open{overflow:hidden}
   .lg-wrap > .footer{margin:36px -14px -60px}
 }
 </style>
-<style id="qsp-dsx56">
+<style id="qrbd-dsx56">
 /* work-56 — Demo success: Download Software ab Shop ID ke neeche (bayein card),
    dayein card me bada QR. Sirf .dsx-dl56 / .dsx-qr56 — Payment success page
    (setup-payment.html) par in class ka koi asar nahi. */
@@ -5487,7 +5487,7 @@ function applyDemoPlanLimits(){
   const soc = [['socInsta', cfg.instagram], ['socFb', cfg.facebook], ['socYt', cfg.youtube]];
   soc.forEach(([id, url]) => { const el = document.getElementById(id); if (el && url) { el.href = url; el.style.display = 'inline-block'; } });
   // Setup video — superadmin ne naya lagaya ho to (work-56)
-  if (cfg.setupVideoId) qspSetGuideVideo(cfg.setupVideoId);
+  if (cfg.setupVideoId) qrbdSetGuideVideo(cfg.setupVideoId);
   // Plan features (agar config me hain)
   const fillPlan = (elId, arr) => {
     const ul = document.getElementById(elId);
@@ -5932,7 +5932,7 @@ function _dmRun(d){
 }
 function dmValidatePhone(raw){
   var norm = dmNormPhone(raw);
-  var isBn = (document.documentElement && document.documentElement.lang === 'bn') || (window.QSPi18n && window.QSPi18n.currentLang === 'bn');
+  var isBn = (document.documentElement && document.documentElement.lang === 'bn') || (window.QRBDi18n && window.QRBDi18n.currentLang === 'bn');
   var MSG_ENTER = isBn ? 'সঠিক বাংলাদেশী মোবাইল নম্বর দিন (যেমন ০১৮২৪৭৪১৪৪৪ বা +৮৮০১৮২৪৭৪১৪৪৪)' : 'Please enter a valid Bangladesh mobile number (e.g. 01824741444 or +8801824741444)';
   var MSG_PREFIX = isBn ? 'বাংলাদেশী নম্বর ০১৩-০১৯ দিয়ে শুরু হতে হবে' : 'Bangladesh mobile numbers must begin with operator prefix 013-019';
   var MSG_FAKE = isBn ? 'অনুগ্রহ করে আপনার আসল হোয়াটসঅ্যাপ নম্বর দিন' : 'Please enter your real WhatsApp mobile number';
@@ -5963,7 +5963,7 @@ function dmPhoneLive(){
     return;
   }
   var v = dmValidatePhone(raw);
-  var isBn = (document.documentElement && document.documentElement.lang === 'bn') || (window.QSPi18n && window.QSPi18n.currentLang === 'bn');
+  var isBn = (document.documentElement && document.documentElement.lang === 'bn') || (window.QRBDi18n && window.QRBDi18n.currentLang === 'bn');
   var OK_MSG = isBn ? '\u2705 নম্বর সঠিক — Shop ID এই নম্বরে পাঠানো হবে' : '\u2705 Number valid — Shop ID will be sent here';
   hint.textContent = v.ok ? OK_MSG : '\u26A0\uFE0F ' + v.error;
   hint.className = 'dm-hint ' + (v.ok ? 'ok' : 'err');
@@ -6003,7 +6003,7 @@ var DM_VIDEO_ID = 'qOPE-90Um8g';
 /* work-56: setup video superadmin se badalta hai (Superadmin → Setup Video).
    /api/homepage-config me setupVideoId aata hai — homepage ka iframe, Sound On
    button aur demo success ka "Setup video" link teeno usi ID par. */
-function qspSetGuideVideo(id){
+function qrbdSetGuideVideo(id){
   if (!/^[A-Za-z0-9_-]{11}$/.test(String(id || '')) || id === DM_VIDEO_ID) return;
   DM_VIDEO_ID = id;
   var f = document.getElementById('gvFrame');
@@ -6236,7 +6236,7 @@ async function createDemo(){
       +   '</div>'
       + '</div>';
 
-      try{ if(window.qspTrack) window.qspTrack('demo_activated'); }catch(e){}
+      try{ if(window.qrbdTrack) window.qrbdTrack('demo_activated'); }catch(e){}
     } else {
       // ── MANUAL MODE ── superadmin ne approval on kar rakha hai
       if(head) head.style.display = 'none';
@@ -6550,7 +6550,7 @@ function sendInq(via){
 
   // Doosre scripts (demo modal) bhi conversion track kar sakein.
   // IIFE ke andar `track` local hai — isliye ek saaf global handle.
-  window.qspTrack = track;
+  window.qrbdTrack = track;
 
   // Pageview — ek hi baar page load par
   track('pageview');
@@ -7147,7 +7147,7 @@ function openLegal(key){
   document.body.classList.add('legal-open');
   p.scrollTop=0;
   /* URL ko asli path par le jao (SEO + share ke liye), reload ke bina */
-  var np=(window.QSP_PAGE_PATHS && window.QSP_PAGE_PATHS[key]) || null;
+  var np=(window.QRBD_PAGE_PATHS && window.QRBD_PAGE_PATHS[key]) || null;
   if(np){
     if(location.pathname.replace(/\/+$/,'')!==np){
       try{ history.pushState(null,'',np); }catch(e){ location.hash=key; }
@@ -7166,9 +7166,9 @@ function closeLegal(){
   document.documentElement.classList.remove('legal-open');
   document.body.classList.remove('legal-open');
   var h=location.hash.replace('#','');
-  var onPagePath=!!(window.QSP_PAGE_PATHS &&
-    Object.keys(window.QSP_PAGE_PATHS).some(function(k){
-      return window.QSP_PAGE_PATHS[k]===location.pathname.replace(/\/+$/,'');
+  var onPagePath=!!(window.QRBD_PAGE_PATHS &&
+    Object.keys(window.QRBD_PAGE_PATHS).some(function(k){
+      return window.QRBD_PAGE_PATHS[k]===location.pathname.replace(/\/+$/,'');
     }));
   if(LEGAL_PAGES[h] || onPagePath){
     try{ history.pushState(null,'','/'); }
@@ -7190,7 +7190,7 @@ function closeLegal(){
   /* purane/alternate path bhi map kar do */
   PATH_KEYS['/feature']='feature'; PATH_KEYS['/guide']='guide';
   PATH_KEYS['/faq']='disclaimer'; PATH_KEYS['/declaration']='disclaimer';
-  window.QSP_PAGE_PATHS=PAGE_PATHS;
+  window.QRBD_PAGE_PATHS=PAGE_PATHS;
 
   function keyFromLocation(){
     var p=location.pathname.replace(/\/+$/,'') || '/';
@@ -7263,7 +7263,7 @@ function closeLegal(){
   }
 })();
 </script>
-<script id="qsp-price52">
+<script id="qrbd-price52">
 /* work-52 — jahan bhi daam likha hai (data-price-tpl), wahan isi site ka aaj
    ka daam: superadmin wala, ya WL partner ki site par partner wala
    (/api/setup-fee/current khud pehchaanta hai). Text English/Hinglish me hi

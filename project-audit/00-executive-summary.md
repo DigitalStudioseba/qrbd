@@ -1,20 +1,20 @@
 # Project Audit: Executive Summary
 
-**Project Name:** QR Se Print (QRSe Print)  
-**Production Domain:** [qrseprint.in](https://qrseprint.in)  
-**Audit Date:** October 21, 2026  
-**Auditor:** Senior Software Engineer, Software Architect & Technical Documentation Specialist  
-**Audit Scope:** Complete, systematic, non-destructive audit of the entire workspace repository at [c:/Users/livem/Downloads/Compressed/QRBD](file:///c:/Users/livem/Downloads/Compressed/QRBD)  
+**Project Name:** legacy brand (legacy brand)
+**Production Domain:** [legacy-domain](https://[legacy-domain]/)
+**Audit Date:** October 21, 2026
+**Auditor:** Senior Software Engineer, Software Architect & Technical Documentation Specialist
+**Audit Scope:** Complete, systematic, non-destructive audit of the entire workspace repository at [c:/Users/livem/Downloads/Compressed/QRBD](file:///c:/Users/livem/Downloads/Compressed/QRBD)
 
 ---
 
 ## 1. Project Purpose & Overview
 
-**QR Se Print** is a specialized print-automation SaaS platform designed for cyber cafés, xerox centers, and commercial print shops operating across India and international markets. The platform eliminates traditional bottlenecks in retail printing—such as sharing customer files via WhatsApp Web, Bluetooth transfers, pendrives, or email attachments—by providing a direct, contactless workflow:
+**legacy brand** is a specialized print-automation SaaS platform designed for cyber cafés, xerox centers, and commercial print shops operating across India and international markets. The platform eliminates traditional bottlenecks in retail printing—such as sharing customer files via WhatsApp Web, Bluetooth transfers, pendrives, or email attachments—by providing a direct, contactless workflow:
 
 1. **Scan & Upload:** A walk-in customer scans a dynamic shop-specific QR code using their smartphone browser.
 2. **Document Queue:** The customer uploads documents (PDF, JPG, PNG), selects print parameters (color/black-and-white, page counts, copies), and chooses a payment method (integrated online payment or Pay-at-Counter).
-3. **Automatic Printing:** The shop's local Windows desktop running the lightweight **QR Se Print Agent** automatically pulls the queued job and prints it directly to local printers (Epson, HP, Canon, Brother, etc.) without manual staff intervention.
+3. **Automatic Printing:** The shop's local Windows desktop running the lightweight **legacy brand Agent** automatically pulls the queued job and prints it directly to local printers (Epson, HP, Canon, Brother, etc.) without manual staff intervention.
 4. **Privacy-First Ephemeral Storage:** Uploaded customer files are held temporarily in-memory or transient storage and automatically purged after 120 seconds or upon print completion, guaranteeing customer data privacy and regulatory compliance.
 
 The audited workspace contains the complete production-grade marketing landing page, single-page application (SPA) informational sub-pages, internationalization (i18n) runtime engine, design system specification, deterministic rebase and invariance testing toolchain, mock fixture server, automated Playwright regression suite, and deployment packages.

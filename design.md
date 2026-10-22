@@ -1,6 +1,6 @@
 ---
 version: alpha
-name: QRSe Print
+name: legacy brand
 description: A playful, high-contrast print-tech brand with bright accents, rounded cards, and confident editorial typography.
 colors:
   primary: "#ff2e63"
@@ -152,10 +152,10 @@ components:
     padding: "4px 10px"
 ---
 
-# QRSe Print
+# legacy brand
 
 ## Overview
-QRSe Print feels energetic, modern, and highly approachable, with a strong startup-like personality built for small business owners and print-shop operators. The visual language combines a clean light canvas with vivid pink-to-purple accents, making the brand feel tech-forward without becoming cold or overly corporate. Overall density is moderate: the page uses generous whitespace for clarity, but key sections are packed with informative, conversion-oriented content.
+legacy brand feels energetic, modern, and highly approachable, with a strong startup-like personality built for small business owners and print-shop operators. The visual language combines a clean light canvas with vivid pink-to-purple accents, making the brand feel tech-forward without becoming cold or overly corporate. Overall density is moderate: the page uses generous whitespace for clarity, but key sections are packed with informative, conversion-oriented content.
 
 ## Colors
 - **Primary (#ff2e63):** A vivid hot pink used for calls to action, emphasis, icons, and attention-grabbing highlights. It carries most of the brand’s emotional warmth and energy.

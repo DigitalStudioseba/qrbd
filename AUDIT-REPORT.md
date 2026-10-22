@@ -1,4 +1,4 @@
-# QRSe Print — Phase 1 Read-Only Audit Report
+# legacy brand — Phase 1 Read-Only Audit Report
 
 **Date:** 2026-10-21  ·  **Scope:** read-only investigation of the workspace; **no files were edited**
 
@@ -26,7 +26,7 @@ Design authority confirmed. Key tokens:
 ## 3. File-by-File Audit
 
 ### 3.1 `index.html`
-- Single-page marketing site for **"QR Se Print"** (QR-based auto-print for cyber cafés/print shops, India, Hinglish copy).
+- Single-page marketing site for **"legacy brand"** (QR-based auto-print for cyber cafés/print shops, India, Hinglish copy).
 - **CSS:** 10 `<style>` blocks. Main block lines 303–2548 (~2,245 lines). Scoped blocks: `qsp-info-design`, `qsp-demo-success`, `qsp-privacy52`, `qsp-dsx56` + 4 in-page blocks. **No external stylesheet** — all design lives in this file.
 - CSS already defines brand `:root` variables: `--pink:#ff2e63 --dark:#17171b --paper:#fffdf8 --line:#ece3d2 --ink:#111114` — plus **off-brand drift**: `--violet:#7c3aed` (spec: `#6f35ff`, **0 uses** of the spec color), `--muted:#6b7280` (spec: `#66627a`, 0 uses), `--yellow:#ffd22e` (spec warning: `#ffca28`, yellow used **22×** vs spec "sparingly"), `--orange:#ff6b35` (**not in spec at all**, 4 uses), `--tint:#fff9ec` (17 uses; spec neutral is `#fffdf8`).
 - Fonts already loaded from Google Fonts: **Plus Jakarta Sans 600/700/800 + Inter 400/500/600/700** ✅ matches spec. Body font = Inter ✅; 62 Jakarta usages (labels/headings) vs 8 Inter.
@@ -56,7 +56,7 @@ Missing but referenced ⚠️: `icon-512.png`, `og-image.png`.
 On disk, unreferenced locally: `QTKABr8jIGuU.png` (used via absolute URL — keep).
 
 ## 4. Canary / Anti-Copy Script (documented — will NOT touch)
-- First `<script>` in `<head>` (`qsp-canary:QSP-7f3a9c1e…`). Allowed contexts: `localhost`, `127.0.0.1`, `[::1]`, `*.localhost`, `*.qrseprint.in`, `file://`. Anywhere else it overwrites the document with an "unofficial copy" notice and redirects to `https://qrseprint.in` after 2.5 s. Wrapped in try/catch. **Behavior documented; left byte-for-byte unchanged.**
+- First `<script>` in `<head>` (`qsp-canary:QSP-7f3a9c1e…`). Allowed contexts: `localhost`, `127.0.0.1`, `[::1]`, `*.localhost`, `*.legacy-domain`, `file://`. Anywhere else it overwrites the document with an "unofficial copy" notice and redirects to `https://[legacy-domain]/` after 2.5 s. Wrapped in try/catch. **Behavior documented; left byte-for-byte unchanged.**
 
 ## 5. Gap Analysis vs design.md
 

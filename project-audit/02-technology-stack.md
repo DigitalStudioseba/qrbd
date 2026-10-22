@@ -78,7 +78,7 @@ The design system conforms to the official specification codified in [design.md]
    - **PayU:** Direct merchant payment integration (`https://secure.payu.in`).
    - **CCAvenue:** Legacy/banking card payment rails (`https://secure.ccavenue.com`).
 3. **Google Play Store:**
-   - Android Shop Agent application (`com.qrseprint.agent`), referenced in [android-plans.json](file:///c:/Users/livem/Downloads/Compressed/QRBD/deploy/fixtures/api/android-plans.json).
+   - Android Shop Agent application (`com.legacy brand.agent`), referenced in [android-plans.json](file:///c:/Users/livem/Downloads/Compressed/QRBD/deploy/fixtures/api/android-plans.json).
 4. **YouTube Video Embeds:**
    - Embeds tutorial videos via `https://www.youtube-nocookie.com/embed/...` ensuring zero third-party cookie tracking prior to user interaction.
 5. **WhatsApp Web Dispatch:**
@@ -104,8 +104,8 @@ The design system conforms to the official specification codified in [design.md]
 - **Runtime Requirement:** Node.js v18+ (tested successfully on Node.js v24.21.0).
 
 ### 3.2 Web App Manifest ([site.webmanifest](file:///c:/Users/livem/Downloads/Compressed/QRBD/site.webmanifest))
-- **Application Name:** `QR Se Print — Cyber Cafe & Print Shop Software`
-- **Short Name:** `QR Se Print`
+- **Application Name:** `legacy brand — Cyber Cafe & Print Shop Software`
+- **Short Name:** `legacy brand`
 - **Display Mode:** `standalone`
 - **Orientation:** `portrait`
 - **Theme Color:** `#ff2e63`

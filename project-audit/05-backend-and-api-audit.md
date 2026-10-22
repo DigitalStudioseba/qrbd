@@ -1,13 +1,13 @@
 # Project Audit: Backend Architecture & API Specifications
 
-This document catalogs and inspects all backend API interactions, request-response schemas, authentication mechanisms, middleware rules, and mock fixture specifications supporting the QR Se Print platform.
+This document catalogs and inspects all backend API interactions, request-response schemas, authentication mechanisms, middleware rules, and mock fixture specifications supporting the legacy brand platform.
 
 ---
 
 ## 1. Backend Architecture & Service Map
 
-The QR Se Print application operates in a decoupled client-server architecture:
-- **Client Frontend:** Single-page application hosted at the root origin (`qrseprint.in`).
+The legacy brand application operates in a decoupled client-server architecture:
+- **Client Frontend:** Single-page application hosted at the root origin (`legacy-domain`).
 - **Production Backend API:** A centralized RESTful service (running Node.js / Express or Python behind Cloudflare reverse proxies) serving `/api/*` endpoints.
 - **Local Staging Replica ([staging_server.py](file:///c:/Users/livem/Downloads/Compressed/QRBD/deploy/staging_server.py)):** An in-memory Python 3 test server binding to `127.0.0.1:8082`, mirroring production security headers, CORS permissions, and route responses via pre-recorded fixtures ([deploy/fixtures/](file:///c:/Users/livem/Downloads/Compressed/QRBD/deploy/fixtures)).
 

@@ -1,4 +1,4 @@
-// QRSe Print — staging regression suite against the REBASED candidate
+// legacy brand — staging regression suite against the REBASED candidate
 // served by the local read-only replica (127.0.0.1:8082, fixture backend).
 // No production traffic. Real browser execution only.
 import { chromium } from 'playwright';

@@ -1,12 +1,12 @@
 # Project Audit: Database Architecture & Data Lifecycle
 
-This report documents all data storage technologies, inferred entity relationships, local browser persistence mechanisms, ephemeral storage pipelines, and end-to-end data lifecycle flows across the QR Se Print system.
+This report documents all data storage technologies, inferred entity relationships, local browser persistence mechanisms, ephemeral storage pipelines, and end-to-end data lifecycle flows across the legacy brand system.
 
 ---
 
 ## 1. Data Storage Architecture Overview
 
-The QR Se Print platform utilizes a hybrid storage architecture balancing high-throughput print queue processing, strict customer data privacy, and minimal client overhead:
+The legacy brand platform utilizes a hybrid storage architecture balancing high-throughput print queue processing, strict customer data privacy, and minimal client overhead:
 
 1. **Client-Side Storage:** Browser `localStorage` for user language preference persistence.
 2. **Ephemeral Document Storage (Print Spool Buffer):** Transient, short-lived storage for customer print jobs with automated garbage collection (120-second time-to-live or immediate deletion upon print spooling).
@@ -96,7 +96,7 @@ Client Displays `#dmSuccess` Vault
 ### 3.2 Ephemeral Print Queue Flow (Customer Walk-In)
 ```
 1. Customer Scans QR Code
-   └── Opens `qrseprint.in/shop/{shopId}` on Smartphone Browser
+   └── Opens `legacy-domain/shop/{shopId}` on Smartphone Browser
 2. Customer Uploads Document
    └── PDF / JPG uploaded via temporary multipart upload
 3. Transient Buffer Assignment
